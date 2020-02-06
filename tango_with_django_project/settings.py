@@ -30,6 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+LOGIN_URL = 'rango:login'
 
 # Application definition
 
@@ -128,4 +129,8 @@ STATIC_URL = '/static/'
 #MEDIA stuff
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+#cookie stuff
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
 
